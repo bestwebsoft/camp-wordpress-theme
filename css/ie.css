@@ -1,0 +1,91 @@
+img {
+	border: none;
+}
+
+/* Form Elements */
+input[type = "text"],
+textarea,
+input[type = "password"] {
+	overflow: visible;
+	padding-top: 10px;
+	height: 40px;
+}
+
+/* Image Slider */
+.camp-slide-line {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);   /* IE6 & 7 */
+      zoom: 1;
+}
+
+/* IE8 */
+.ie8 .camp-main img {
+	width: inherit;
+}
+
+/* Search Form */
+.ie8 .camp-search-txt#s {
+	top: -25px;
+}
+
+/* Upload File */
+.ie8 .camp-upload-file .camp-upload-img {
+	width: 222px;
+	height: 49px;
+}
+
+/* Select */
+.ie8 .camp-select-header img {
+	width: 8px;
+	height: 17px;
+}
+
+/* IE7 */
+.ie7 .camp-post-header {
+	margin-bottom: 5px;
+}
+
+/* Form Elements */
+.ie7 label input[type = "password"] {
+	margin: 0;
+	padding: 0;
+}
+
+/* Buttons */
+.ie7 input[type = "submit"],
+.ie7 input[type = "reset"],
+.ie7 input[type = "button"] {
+	padding: 13px 8px;
+}
+
+/* Image Slider */
+.ie7 .camp-slide-line {
+	left: 0;
+}
+
+/* Sidebar */
+.ie7 .widget {
+	overflow: hidden;
+}
+
+/* Search */
+.ie7 .widget_search {
+	width: 302px;
+}
+
+.ie7 .camp-search-btn {
+	width: 49px;
+	height: 49px;
+	position: relative;
+	top: -10px;
+}
+
+.ie7 .camp-search-txt#s {
+	top: 0;
+}
+
+/* Portfolio Plugin */
+.ie7 .post .portfolio_thumb img {
+	width: 100%;
+}

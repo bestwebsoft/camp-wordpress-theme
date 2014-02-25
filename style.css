@@ -1,0 +1,1345 @@
+/*
+Theme Name: Camp
+Theme URI: http://bestwebsoft.com/theme/camp/
+Author: the BestWebSoft team
+Author URI: https://github.com/bestwebsoft
+Description: Camp Wordpress theme is simply solution to customize your website
+Version: 1.1
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+Tags: blue,  two-columns, right-sidebar,  fixed-layout, custom-menu, featured-images, sticky-post, translation-ready, custom-header, custom-background
+*/
+
+/**
+ * 1.0 Basic Structure
+ * ----------------------------------------------------------------------------
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Fonts */
+@font-face {
+	font-family: "Open Sans";
+	src: url('fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/OpenSans-Regular.woff') format('woff'),
+	url('fonts/OpenSans-Regular.ttf') format('truetype'),
+	url('fonts/OpenSans-Regular.svg#copperplate_gothic_boldRg') format('svg');
+}
+
+@font-face {
+	font-family: "Open Sans Bold";
+	src: url('fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+	url('fonts/OpenSans-Bold.woff') format('woff'),
+	url('fonts/OpenSans-Bold.ttf') format('truetype'),
+	url('fonts/OpenSans-Bold.svg#copperplate_gothic_boldRg') format('svg');
+}
+
+@font-face {
+	font-family: "Open Sans Semibold";
+	src: url('fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+	url('fonts/OpenSans-Semibold.woff') format('woff'),
+	url('fonts/OpenSans-Semibold.ttf') format('truetype'),
+	url('fonts/OpenSans-Semibold.svg#copperplate_gothic_boldRg') format('svg');
+}
+
+@font-face {
+	font-family: "Ubuntu Mono";
+	src: url('fonts/UbuntuMono-Regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/UbuntuMono-Regular.woff') format('woff'),
+	url('fonts/UbuntuMono-Regular.ttf') format('truetype'),
+	url('fonts/UbuntuMono-Regular.svg#copperplate_gothic_boldRg') format('svg');
+}
+
+.camp-page {
+	margin: auto;
+	font-family: "Open Sans";
+}
+
+/**
+ * 2.0 Header
+ * ----------------------------------------------------------------------------
+ */
+
+header {
+	background: #fff;
+	width: 100%;
+	min-width: 1200px;
+	z-index: 100;
+}
+
+/**
+ * 2.1 Site Header
+ * ----------------------------------------------------------------------------
+ */
+
+.camp-head {
+	margin: 0 auto;
+	width: 942px;
+	padding-top: 20px;
+	word-wrap: break-word;
+	z-index: 100;
+}
+
+/* Site Title */
+.camp-head-title {
+	margin-left: 30px;
+	float: left;
+	max-width: 100%;
+}
+
+.camp-head-title h1 {
+	font: bold 24px "Open Sans Semibold";
+	color: #000;
+}
+
+.camp-head-title h1:first-letter {
+	color: #3d8fd5;
+}
+
+.camp-head-title h1 a {
+	font: bold 24px "Open Sans Semibold";
+	color: #000;
+	text-decoration: none;
+}
+
+.camp-head-title p {
+	font: 13px "Open Sans";
+	color: #aaa;
+}
+
+/**
+ * 2.2 Navigation
+ * ----------------------------------------------------------------------------
+ */
+
+.camp-site-navigation {
+	padding-top: 22px;
+	padding-bottom: 13px;
+	float: right;
+	z-index: 100;
+}
+
+.camp-site-navigation ul {
+	margin: 0;
+}
+
+.camp-site-navigation li {
+	float: left;
+	word-wrap: break-word;
+	position: relative;
+	z-index: 100;
+}
+
+.camp-site-navigation li a {
+	font: 14px "Open Sans";
+	color: #aaa;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 20px 30px 20px;
+	display: block;
+}
+
+.camp-site-navigation li a:hover {
+	color: #3d8fd5;
+}
+
+.camp-site-navigation li a:active {
+	color: #000;
+}
+
+.camp-site-navigation .current_page_item a,
+.camp-site-navigation .current_page-item a {
+	color: #444;
+}
+
+/* Sub Menu */
+
+.camp-site-navigation .menu-item > .sub-menu,
+.camp-site-navigation .page_item > .children {
+	background: #fff;
+	border: 1px solid #ddd;
+	width: 220px;
+	position: absolute;
+	right: 0;
+	display: none;
+	z-index: 100;
+}
+
+.camp-site-navigation .menu-item:hover > .sub-menu,
+.camp-site-navigation .page_item:hover > .children {
+	display: block;
+}
+
+.camp-site-navigation .menu-item  > .sub-menu .menu-item,
+.camp-site-navigation .page_item  > .children .page_item {
+	width: 220px;
+	border-top: 1px dashed #ddd;
+	position: relative;
+}
+
+.camp-site-navigation .menu-item .sub-menu .menu-item:first-child,
+.camp-site-navigation .page_item .children .page_item:first-child {
+	border: none;
+}
+
+.camp-site-navigation .menu-item .sub-menu .menu-item:hover,
+.camp-site-navigation .page_item .children .page_item:hover {
+	background: #ececec;
+}
+
+.camp-site-navigation .menu-item .sub-menu .menu-item a,
+.camp-site-navigation .page_item .children .page_item a {
+	padding: 19px;
+}
+
+.camp-site-navigation .menu-item > .sub-menu .menu-item > .sub-menu,
+.camp-site-navigation .page_item > .children .page_item > .children {
+	margin-left: 0;
+	left: 100%;
+	top: 30%;
+}
+
+/**
+ * 2.3 Image Slider
+ * ----------------------------------------------------------------------------
+ */
+
+.camp-slider {
+	text-align: center;
+	max-height: 343px;
+	overflow: hidden;
+	position: relative;
+	clear: both;
+}
+
+.camp-slider-btn {
+	width: 47px;
+	height: 47px;
+	margin-top: 148px;
+	opacity: 0.1;
+	position: absolute;
+}
+
+.camp-slider #right {
+	right: 0;
+	z-index: 100;
+}
+
+.camp-slider #left {
+	left: 0;
+	z-index: 100;
+}
+
+.camp-slide {
+	height: 343px;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.camp-slide-img img {
+	height: 343px;
+	z-index: 0;
+	width: auto;
+}
+
+.camp-slide-line {
+	height: 75px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	bottom: 0;
+	z-index: 50;
+}
+
+.camp-slide-text {
+	padding: 15px 0;
+	height: 45px;
+	margin: 0 auto;
+	width: 1200px;
+	text-align: justify;
+	text-overflow: ellipsis;
+	z-index: 1;
+}
+
+.camp-slide-text h1,
+.camp-slide-text h2 {
+	font-family: "Open Sans";
+	color: #fff;
+	margin-left: 162px;
+}
+
+.camp-slide-text h1 {
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+
+.camp-slide-text h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.camp-slide-text h2 {
+	font-size: 13px;
+}
+
+/**
+ * 3.0 Content
+ * ----------------------------------------------------------------------------
+ */
+
+.camp-main{
+	width: 942px;
+	padding: 29px 0 50px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.site-content {
+	float: left;
+	width: 600px;
+}
+
+.site-content a {
+	font: 15px "Open Sans";
+	color: #3d8fd5;
+	text-decoration: none;
+}
+
+.site-content a:hover {
+	text-decoration: underline;
+}
+
+/**
+ * 3.1 Post
+ * ----------------------------------------------------------------------------
+ */
+
+.post,
+.hentry,
+.sticky {
+	background: #fff;
+	width: 540px;
+	border: 1px solid #d9d9d9;
+	padding: 21px 30px 18px;
+	margin-bottom: 28px;
+	position: relative;
+	z-index: 90;
+}
+
+/* Post Header */
+.camp-post-header {
+	min-width: 0;
+}
+
+.camp-post-header .camp-post-title {
+	font: 21px "Open Sans";
+	color: #3d8fd5;
+	padding: 0 0 5px 0;
+}
+
+.camp-post-header .camp-post-title a {
+	font: 21px "Open Sans";
+	text-decoration: none;
+	color: #3d8fd5;
+}
+
+.camp-post-header .camp-post-meta {
+	font: 13px "Open Sans";
+	color: #aaa;
+	letter-spacing: -0.15px;
+	padding: 0 0 19px 0;
+}
+
+.camp-post-header .camp-post-meta a {
+	font: 13px "Open Sans";
+	color: #aaa;
+	margin-left: 4px;
+	text-decoration: none;
+}
+
+h1.camp-archive-header {
+	font: 21px "Open Sans Semibold";
+	color: #666;
+}
+
+.site-content h1.camp-featured-post {
+	font: 13px "Open Sans";
+	color: #aaa;
+	border-top: 4px double #eee;
+	border-bottom: 4px double #eee;
+	padding: 10px 0;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/* Post Footer */
+.camp-post-footer {
+	min-width: 0;
+	padding: 15px 0 0 0;
+	border-top: 1px dashed #ddd;
+	position: relative;
+	clear: both;
+}
+
+.camp-post-footer .camp-tags {
+	font: 13px "Open Sans";
+	color: #aaa;
+	padding: 0;
+}
+
+.camp-post-footer .camp-tags a {
+	font: 13px "Open Sans";
+	color: #aaa;
+	text-decoration: none;
+}
+
+.camp-top-link {
+	display: block;
+	padding-bottom: 11px;
+}
+
+.camp-post-header a:hover,
+.camp-post-footer a:hover {
+	color: #3d8fd5;
+}
+
+/* Post Content */
+.site-content p {
+	font: 13px "Open Sans";
+	color: #666;
+	line-height: 168%;
+	padding-bottom: 22px;
+}
+
+.site-content p a {
+	font: 13px "Open Sans";
+	color: #3d8fd5;
+	text-decoration: none;
+}
+
+.site-content h1 {
+	font: 24px "Open Sans Bold";
+	color: #444;
+	padding: 0 0 16px 0;
+}
+
+.site-content h2 {
+	font: bold 21px "Open Sans Bold";
+	color: #444;
+	padding: 0 0 17px 0;
+}
+
+.site-content h3 {
+	font: bold 18px "Open Sans Bold";
+	color: #444;
+	padding: 0 0 20px 0;
+}
+
+.site-content h4 {
+	font: bold 15px "Open Sans Bold";
+	color: #444;
+	padding: 0 0 20px 0;
+}
+
+.site-content h5 {
+	font: bold 13px "Open Sans Bold";
+	color: #444;
+	padding: 0 0 23px 0;
+}
+
+.site-content h6 {
+	font: bold 11px "Open Sans Bold";
+	color: #444;
+	padding: 0 0 30px 0;
+}
+
+address {
+	font: 13px "Open Sans";
+	color: #666;
+}
+
+.site-content table {
+	font: 13px "Open Sans";
+	color: #666;
+	border-spacing: 0;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 5px;
+	width: 100%;
+	line-height: 2;
+	border-collapse: collapse;
+}
+
+.site-content table th {
+	font: 13px "Open Sans";
+	font-weight: bold;
+	text-align: left;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+
+.site-content table th a {
+	font: 13px "Open Sans";
+	text-transform: uppercase;
+}
+
+.site-content tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.site-content table td {
+	padding: 6px 10px 6px 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+sup, sub {
+	color: #aaa;
+	letter-spacing: 0.4px;
+	display: inline-block;
+}
+
+sup {
+	margin-left: 3px;
+}
+
+sub {
+	margin-bottom: -3px;
+}
+
+ins {
+	text-decoration: none;
+	background: #fff9c0;
+}
+
+pre {
+	background: #efefef;
+	font: 13px "Ubuntu Mono";
+	color: #999;
+	border: 1px solid #ddd;
+	padding: 13px 20px;
+	white-space: pre;
+	overflow: auto;
+	line-height: 165%;
+	margin-bottom: 27px;
+}
+
+cite,
+acronym,
+abbr {
+	font-style: normal;
+	text-decoration: none;
+	border: none;
+}
+
+acronym,
+abbr {
+	cursor: help;
+}
+
+blockquote {
+	position: relative;
+	padding: 0 35px;
+	margin-bottom: 2px;
+}
+
+blockquote p {
+	font: 14px "Open Sans";
+	color: #aaa;
+}
+
+blockquote cite {
+	font: 14px "Open Sans Semibold";
+	color: #666;
+	margin-left: 2px;
+}
+
+.camp-quote {
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+/* Navigation */
+.camp-paging {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	float: none;
+	margin-top: -20px;
+}
+
+.camp-paging .camp-prev-post-link {
+	float: right;
+}
+
+.camp-paging .camp-next-post-link {
+	float: left;
+}
+
+/* List Types */
+ol,
+ul,
+dl {
+	font: 13px "Open Sans";
+	color: #666;
+	margin: 0 0 0 47px;
+}
+
+dd {
+	margin-bottom: 21px;
+}
+
+ul {
+	margin-bottom: 22px;
+}
+
+ol {
+	margin-bottom: 13px;
+}
+
+.site-content li {
+	margin: 0 0 8px 4px;
+}
+
+.site-content li ul,
+.site-content li ol {
+	margin: 8px 0 0 47px;
+}
+
+.site-content ul {
+	list-style: disc;
+}
+
+.site-content dl {
+	margin-left: 30px;
+}
+
+.site-content dt {
+	font: bold 15px "Open Sans";
+	color: #444;
+	letter-spacing: -0.8px;
+	margin-bottom: 2px;
+}
+
+.site-content img {
+	max-width: 540px;
+	height: auto;
+}
+
+/* Form Elements */
+.site-content form {
+	font: 14px "Open Sans";
+	color: #666;
+}
+
+label {
+	font-size: 13px;
+	padding-top: 13px;
+	display: inline-block;
+}
+
+input[type = "text"],
+textarea,
+input[type = "password"] {
+	font: 15px "Open Sans";
+	width: 210px;
+	padding: 0 5px;
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: auto;
+	margin-bottom: 5px;
+}
+
+input[type = "text"],
+input[type = "password"] {
+	height: 45px;
+}
+
+textarea {
+	margin-bottom: 19px;
+	height: 107px;
+	max-width: 528px;
+	max-height: 250px;
+	padding: 5px;
+}
+
+/* Radiobutton and Checkbox */
+.camp-radio,
+.camp-checkbox {
+	margin: 12px 9px 0 29px;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 4px;
+}
+
+/* File Upload */
+.camp-upload-file {
+	background: #f2f2f2;
+	font: 13px "Open Sans";
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	color: #666;
+	width: 460px;
+	height: 70px;
+	position: relative;
+}
+
+.camp-upload-img {
+	margin: 11px 0 0 10px;
+	cursor: pointer;
+	width: 222px;
+	height: 49px;
+}
+
+.camp-upload-file .camp-upload-lbl {
+	position: relative;
+	padding: 0;
+	left: 18px;
+	top: -20px;
+}
+
+/* Buttons */
+input[type = "submit"],
+input[type = "reset"],
+input[type = "button"] {
+	background: #444;
+	font: 12px "Open Sans Bold";
+	color: #fff;
+	padding: 15px 19px;
+	text-transform: uppercase;
+	border: 1px solid #343434;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	letter-spacing: -0.8px;
+	margin-right: 9px;
+}
+
+input[type = "submit"] {
+	padding: 15px 21px;
+}
+
+input[type = "submit"]:hover,
+input[type = "submit"]:active,
+input[type = "reset"]:hover,
+input[type = "reset"]:active,
+input[type = "button"]:hover,
+input[type = "button"]:active {
+	background: #3d8fd5;
+	border: 1px solid #3376af;
+}
+
+/* Select */
+.camp-select-main {
+	margin: 0;
+	position: relative;
+	width: 220px;
+	z-index: 100;
+}
+
+.camp-select-main .camp-select {
+	border: 1px solid #ddd;
+	list-style: none;
+	padding-right: 5px;
+	margin: 0 0 22px 0;
+	position: absolute;
+	top: 45px;
+	z-index: 100;
+	background: #fff;
+	width: 213px;
+}
+
+.camp-select li {
+	display: none;
+}
+
+.camp-select li:first-child {
+	margin-top: 8px;
+}
+
+.camp-select li:last-child {
+	margin-bottom: 8px;
+}
+
+.camp-select-header {
+	width: 200px;
+	background: #ddd;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	padding: 14px 10px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.camp-select-header img {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	cursor: pointer;
+	width: 8px;
+	height: 17px;
+}
+
+.camp-select-header .camp-header-text {
+	font: 13px "Open Sans";
+	color: #666;
+	width: 180px;
+	overflow: hidden;
+	height: 18px;
+	padding: 0;
+}
+
+.camp-select .camp-option-group {
+	color: #aaa;
+	margin: 2px 5px 12px 8px;
+}
+
+.camp-select .camp-option {
+	color: #666;
+	margin: 0 0 12px 28px;
+}
+
+.camp-select .camp-option:hover {
+	color: #3d8fd5;
+	cursor: pointer;
+}
+
+/* Gellery */
+.gallery dl {
+	margin: 0;
+}
+
+.gallery img {
+	height: auto;
+}
+
+.gallery-columns-4 img {
+	max-width: 120px;
+}
+
+.gallery-columns-5 img {
+	max-width: 100px;
+}
+
+.gallery-columns-6 img {
+	max-width: 80px;
+}
+
+.gallery-columns-7 img {
+	max-width: 65px;
+}
+
+.gallery-columns-8 img {
+	max-width: 55px;
+}
+
+.gallery-columns-9 img {
+	max-width: 50px;
+}
+
+.prev-img-link {
+	float: left;
+}
+
+.next-img-link {
+	float: right;
+}
+
+.image-attachment .attachment {
+	text-align: center;
+	margin-top: 35px;
+}
+
+
+/* Comments */
+#comments,
+#respond h3 {
+	font: 21px "Open Sans Bold";
+	color: #4f4f4f;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.navigation {
+	margin-bottom: 30px;
+}
+
+.navigation a {
+	font: 14px "Open Sans";
+}
+
+.site-content .commentlist {
+	margin: 0;
+}
+
+.commentlist .comment,
+.commentlist .-pingback,
+.commentlist .trackback,
+.bypostauthor {
+	border-top: 2px solid #fff;
+	background: #f5f5f5;
+	list-style: none;
+	margin: 0;
+}
+
+.commentlist .pingback .comment-author:before {
+	content: 'Pingback: ';
+	font: 15px "Open Sans";
+	color: #666;
+	vertical-align: top;
+}
+
+.commentlist .pingback .comment-author:before {
+	content: 'Trackback: ';
+	font: 15px "Open Sans";
+	color: #666;
+	vertical-align: top;
+}
+
+.commentlist .pingback p,
+.commentlist .trackback p,
+.commentlist .pingback .comment-meta,
+.commentlist .trackback .comment-meta,
+.commentlist .pingback .comment-author .says,
+.commentlist .trackback .comment-author .says {
+	display: none;
+}
+
+.commentlist .children {
+	margin-left: 30px;
+}
+
+.comment-body {
+	padding: 5px;
+}
+
+.comment-body .avatar {
+	width: 50px;
+	height: 50px;
+}
+
+.children .comment-body .avatar {
+	width: 40px;
+	height: 40px;
+}
+
+.comment-author .fn,
+.comment-author .says {
+	font: 15px "Open Sans";
+	color: #666;
+	vertical-align: bottom;
+	margin-left: 5px;
+}
+
+.comment-author a {
+	vertical-align: bottom;
+}
+
+.comment-meta {
+	position: relative;
+	top: -55px;
+	left: 55px;
+}
+
+.children .comment-meta {
+	top: -45px;
+	left: 45px;
+}
+
+.comment-meta a,
+.reply a {
+	font: 13px "Open Sans";
+}
+
+.reply {
+	font: 17px "Opne Sans";
+	margin-left: 5px;
+}
+
+#reply-title small {
+	display: block;
+}
+
+/* Respond */
+#respond {
+	margin-left: 5px;
+}
+
+#respond label {
+	font: 15px "Open Sans";
+	margin-left: 5px;
+	padding-top: 0;
+	display: block;
+}
+
+#respond #commentform {
+	padding-bottom: 0;
+}
+
+.required {
+	color: #3d8fd5;
+}
+
+/* Add post in Slider */
+.site-content #meta-for-slider {
+	position: absolute;
+	right: 0;
+	top: 11px;
+}
+
+#meta-for-slider label {
+	font: 13px "Open Sans";
+	display: inline;
+	padding: 0;
+	color: #aaa;
+}
+
+#meta-for-slider .camp-checkbox {
+	margin: 0 0 0 5px;
+}
+
+#meta-for-slider input[type = "submit"] {
+	padding: 0 5px;
+}
+
+/* Plugins */
+
+/* Contact Form */
+.widget .camp-upload-file {
+	width: 250px;
+	height: 90px;
+}
+
+.widget .camp-upload-lbl {
+	top: 0;
+}
+
+/* Facebook */
+#fcbk_share {
+	margin-bottom: 25px;
+}
+
+.fcbk_button {
+	margin-right: 8px;
+}
+
+.fcbk_like {
+	top: -1px;
+}
+
+/* Gallery */
+
+.gallery_box_single p {
+	padding-bottom: 0;
+	padding-top: 22px;
+	margin: 0;
+}
+
+/* Portfolio */
+
+.portfolio_thumb img {
+	width: inherit;
+}
+
+.portfolio_terms {
+	top: -15px;
+}
+
+.portfolio_short_content {
+	width: auto;
+}
+
+.portfolio_content .read_more a {
+	padding: 3px;
+	width: auto;
+}
+
+.widget .portfolio_content .read_more a {
+	position: relative;
+	top: -15px;
+}
+
+/* Quotes and Tips */
+
+#quotes_box_and_tips p {
+	color: #fff;
+}
+
+/**
+ * 3.2 Sidebar
+ * ----------------------------------------------------------------------------
+ */
+
+aside {
+	float: right;
+	width: 302px;
+}
+
+aside p {
+	font: 15px "Open Sans";
+	color: #666;
+}
+
+aside ul {
+	margin: 0;
+}
+
+aside li {
+	list-style: none;
+}
+
+/* Widgets */
+.widget {
+	padding: 14px 15px 15px 30px;
+	margin-bottom: 19px;
+	background: #fff;
+	border: 1px solid #dadada;
+	word-wrap: break-word;
+}
+
+.widget li {
+	list-style: none;
+	margin-bottom: 8px;
+}
+
+.widget li:first-child {
+	margin-top: 27px;
+}
+
+.widget .camp-select li:first-child {
+	margin-top: 8px;
+}
+
+.widget li ul {
+	margin-left: 20px;
+}
+
+.widget li ul li:first-child {
+	margin-top: 5px;
+}
+
+.widget h2 {
+	font: bold 12px "Open Sans";
+	color: #4f4f4f;
+	text-transform: uppercase;
+	border: 1px solid #dadada;
+	background: #ececec;
+	padding: 11px 0 9px 30px;
+	width: 270px;
+	margin: 0 0 27px -31px;
+	letter-spacing: -0.8px;
+}
+
+.widget a {
+	font: 13px "Open Sans";
+	color: #858585;
+	margin-top: 8px;
+	text-decoration: none;
+}
+
+.widget a:hover {
+	color: #3d8fd5;
+}
+
+.widget img {
+	max-width: 255px;
+	height: auto;
+}
+
+/* Search Form */
+.widget_search {
+	background: none;
+	border: none;
+	padding: 0;
+	margin-bottom: 18px;
+}
+
+.widget_search h2 {
+	margin: 0 0 10px 0;
+}
+
+.camp-search-form {
+	height: 49px;
+	width: 302px;
+}
+
+.camp-search-txt#s {
+	font: 14px "Open Sans";
+	letter-spacing: -0.8px;
+	width: 226px;
+	height: 46px;
+	border: 1px solid #dadada;
+	position: relative;
+	top: -20px;
+}
+
+.camp-search-btn {
+	border: none;
+	background: none;
+	margin-left: 4px;
+	cursor: pointer;
+	padding: 0;
+}
+
+/* Recent Comments */
+li .recentcomments {
+	font: 13px "Open Sans";
+	color: #aaa;
+}
+
+/* Calendar */
+.widget_calendar {
+	width: 280px;
+	padding: 14px 10px 15px;
+}
+
+.widget_calendar h2 {
+	width: 270px;
+	margin-left: -11px;
+}
+
+.widget_calendar table {
+	width: 280px;
+	font: 14px "Open Sans";
+	color: #444;
+}
+
+.widget_calendar table a{
+	font: 14px "Open Sans";
+	color: #3d8fd5;
+}
+
+.widget_calendar #today {
+	font-weight: bold;
+	color: #f00;
+}
+
+.widget_calendar tfoot #next {
+	text-align: right;
+}
+
+/* Widget Text */
+.widget_text {
+	font: 13px "Open Sans";
+	color: #666;
+}
+
+.widget_text ul,
+.widget_text li ul,
+.widget_text ol {
+	margin: 0 0 0 20px;
+}
+
+.widget_text ul li,
+.widget_text li ul li {
+	list-style: disc;
+}
+
+.widget_text ol li,
+.widget_text li ol li {
+	list-style: decimal;
+}
+
+/**
+ * 4.0 Footer
+ * ----------------------------------------------------------------------------
+ */
+
+footer {
+	background: #fff;
+	border-top: 1px solid #d4d5d5;
+	width: 100%;
+	min-width: 1200px;
+}
+
+.camp-footer {
+	font: 13px "Open Sans";
+	color: #aaa;
+	width: 890px;
+	padding: 30px 0px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.camp-footer a {
+	font: 13px "Open Sans";
+	color: #3d8fd5;
+	text-decoration: none;
+}
+
+.camp-cpy {
+	float: left;
+	margin-left: 5px;
+	word-wrap: break-word;
+	max-width: 60%;
+}
+
+.camp-author {
+	float: right;
+	margin-right: 5px;
+}
+
+/* Images */
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font:italic 13px "Open Sans";
+	color: #aaa;
+	margin-top:5px;
+	padding-bottom: 18px;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignleft {
+	margin: 5px 20px 5px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 10px 5px 0;
+}
+
+img.alignright {
+	margin: 5px 0 5px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 5px 10px;
+}
+
+img.aligncenter {
+	margin: 5px auto;
+}
+
+img.alignnone {
+	margin: 5px 0;
+}
