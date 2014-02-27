@@ -116,8 +116,10 @@
 		/* Generate new Id for <select> */
 		var camp_selectId = 0;
 		$( 'select' ).each(function() {
-			$( this ).attr( 'id', 'camp-select-' + camp_selectId );
-			camp_selectId++;
+			if ( ! this.id ) {
+				$( this ).attr( 'id', 'camp-select-' + camp_selectId );
+				camp_selectId++;
+			}
 		});
 
 		/* Select */
@@ -206,42 +208,44 @@
 		/* Radiobutton */
 		var camp_radioId = 0;
 		$( 'input:radio' ).each(function() {
+			if ( ! this.id ) {
+				$( this ).attr( 'id', 'camp-radio-' + camp_radioId );
+				camp_radioId++;
+			}
 			$( this ).css( 'display', 'none' );
-			$( this ).after( '<img id = "camp-radio-' + camp_radioId + '" class = "camp-radio" src = "' + camp_path + 'radio.jpg" alt = "Radio" />' );
-			$( this ).attr( 'id', 'camp-radio-' + camp_radioId );
+			$( this ).after( '<img id = "' + this.id + '" class = "camp-radio" src = "' + camp_path + 'radio.jpg" alt = "Radio" />' );
 			if ( $( this ).attr( 'checked' ) ) {
 				$( '.radio#' + this.id ).attr( 'src', camp_path + 'radio-checked.jpg' );
 			} else {
 				$( '.radio#' + this.id ).attr( 'src', camp_path + 'radio.jpg' );
-			}
-			camp_radioId++;
+			}	
 		});
 
 		$( '.camp-radio' ).on( {
 			click: function() {
-				if ( $( 'input:radio#' + this.id ).prop( 'checked' ) ) {
-					$( 'input:radio#' + this.id ).prop( 'checked', false );
+				if ( $( 'input:radio#' + this.id ).attr( 'checked' ) ) {
+					$( 'input:radio#' + this.id ).removeAttr( 'checked' );
 					$( '.camp-radio#' + this.id ).attr( 'src', camp_path + 'radio.jpg' );
 				} else {
 					var name = $( 'input:radio#' + this.id ).attr( 'name' );
-					$( 'input[name = ' + name + ']' ).prop( 'checked', false )
+					$( 'input:radio[name = ' + name + ']' ).removeAttr( 'checked' )
 						.each(function() {
 							$( '.camp-radio#' + this.id ).attr( 'src', camp_path + 'radio.jpg' );
 						});
 					$( '.camp-radio#' + this.id ).attr( 'src', camp_path + 'radio-checked.jpg' );
-					$( 'input:radio#' + this.id ).prop( 'checked', true );
+					$( 'input:radio#' + this.id ).attr( 'checked', true );
 				}
 				$( this ).css( 'opacity', '1' );
 
 			},
 			mouseenter: function() {
-				if ( ! $( 'input:radio#' + this.id ).prop( 'checked' ) ) {
+				if ( ! $( 'input:radio#' + this.id ).attr( 'checked' ) ) {
 					$( '.camp-radio#' + this.id ).attr( 'src', camp_path + 'radio-checked.jpg' )
 						.css( 'opacity', '0.5' );
 				}
 			},
 			mouseleave: function() {
-				if ( ! $( 'input:radio#' + this.id ).prop( 'checked' ) ) {
+				if ( ! $( 'input:radio#' + this.id ).attr( 'checked' ) ) {
 					$( '.camp-radio#' + this.id ).attr( 'src', camp_path + 'radio.jpg' )
 						.css( 'opacity', '1' );
 				}
@@ -251,37 +255,39 @@
 		/* Checkbox */
 		var camp_checkboxId = 0;
 		$( 'input:checkbox' ).each(function() {
+			if ( ! this.id ) {
+				$( this ).attr( 'id', 'camp-checkbox-' + camp_checkboxId );
+				camp_checkboxId++;
+			}
 			$( this ).css( 'display', 'none' );
-			$( this ).after( '<img id = "camp-checkbox-' + camp_checkboxId + '" class = "camp-checkbox" src = "' + camp_path + 'checkbox.jpg" alt = "Checkbox" />' );
-			$( this ).attr( 'id', 'camp-checkbox-' + camp_checkboxId );
+			$( this ).after( '<img id = "' + this.id + '" class = "camp-checkbox" src = "' + camp_path + 'checkbox.jpg" alt = "Checkbox" />' );
 			if ( $( this ).attr( 'checked' ) ) {
 				$( '.camp-checkbox#' + this.id ).attr( 'src', camp_path + 'checkbox-checked.jpg' );
 			} else {
 				$( '.camp-checkbox#' + this.id ).attr( 'src', camp_path + 'checkbox.jpg' );
-			}
-			camp_checkboxId++;
+			}	
 		});
 
 		$( '.camp-checkbox' ).on( {
 			click: function() {
-				if ( $('input:checkbox#' + this.id ).prop( 'checked' ) ) {
-					$( 'input:checkbox#' + this.id ).prop( 'checked', false );
+				if ( $('input:checkbox#' + this.id ).attr( 'checked' ) ) {
+					$( 'input:checkbox#' + this.id ).removeAttr( 'checked' );
 					$( '.camp-checkbox#' + this.id ).attr( 'src', camp_path + 'checkbox.jpg' );
 				} else {
 					$( '.camp-checkbox#' + this.id ).attr( 'src', camp_path + 'checkbox-checked.jpg' );
-					$( 'input:checkbox#' + this.id ).prop( 'checked', true );
+					$( 'input:checkbox#' + this.id ).attr( 'checked', true );
 				}
 				$( this ).css( 'opacity', '1' );
 
 			},
 			mouseenter: function() {
-				if ( ! $( 'input:checkbox#' + this.id ).prop( 'checked' ) ) {
+				if ( ! $( 'input:checkbox#' + this.id ).attr( 'checked' ) ) {
 					$( '.camp-checkbox#' + this.id ).attr( 'src', camp_path + 'checkbox-checked.jpg' )
 						.css( 'opacity', '0.5' );
 				}
 			},
 			mouseleave: function() {
-				if ( ! $( 'input:checkbox#' + this.id ).prop( 'checked' ) ) {
+				if ( ! $( 'input:checkbox#' + this.id ).attr( 'checked' ) ) {
 					$( '.camp-checkbox#' + this.id ).attr( 'src', camp_path + 'checkbox.jpg' )
 						.css( 'opacity', '1' );
 				}
@@ -292,12 +298,14 @@
 		var camp_uploadId = 0;
 		$( 'input:file' ).wrap( '<div class = "camp-upload-file"></div>' )
 			.each(function() {
-				$( this ).css( 'display', 'none' );
-				$( this ).attr( 'id', 'camp-upload-' + camp_uploadId );
+				if ( ! this.id ) {
+					$( this ).attr( 'id', 'camp-upload-' + camp_uploadId );
+					camp_uploadId++;
+				}
+				$( this ).css( 'display', 'none' );	
 				$( this ).attr( 'name', 'file' );
-				$( this ).after( '<label class = "camp-upload-lbl" id = "camp-upload-' + camp_uploadId + '" for = "' + this.id + '">File is not selected</label>' );
-				$( this ).after( '<img class = "camp-upload-img" id = "camp-upload-' + camp_uploadId + '"" src = "' + camp_path + 'upload.jpg" alt = "Upload" />' );
-				camp_uploadId++;
+				$( this ).after( '<label class = "camp-upload-lbl" id = "' + this.id + '" for = "' + this.id + '">File is not selected</label>' );
+				$( this ).after( '<img class = "camp-upload-img" id = "' + this.id + '"" src = "' + camp_path + 'upload.jpg" alt = "Upload" />' );
 			});
 
 		$( '.camp-upload-img' ).click(function() {
@@ -320,6 +328,7 @@
 			});
 			$( parrentForm ).find( '.camp-radio' ).attr( 'src', camp_path + 'radio.jpg' );
 			$( parrentForm ).find( '.camp-checkbox' ).attr( 'src', camp_path + 'checkbox.jpg' );
+			$( parrentForm ).find( 'input' ).removeAttr( 'checked' );
 			$( parrentForm ).find( '.camp-upload-lbl' ).text('File is not selected');
 		});
 	})

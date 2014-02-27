@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: blue,  two-columns, right-sidebar,  fixed-layout, custom-menu, featured-images, sticky-post, translation-ready, slider, custom-header, custom-background
 Requires at least: 3.3
 Tested up to: 3.8.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -102,6 +102,9 @@ From your Admin Panel, use the menu to select Appearance -> Menus. At 'Manage Lo
 
 == Upgrade Notice ==
 
+= V1.2 - 07.02.2014 =
+* Fixed bug with inputs.
+
 = V1.1 - 29.01.2014 =
 * Updated style for <fieldset>.
 
@@ -112,6 +115,9 @@ From your Admin Panel, use the menu to select Appearance -> Menus. At 'Manage Lo
 * Release Camp theme.
 
 == Changelog ==
+
+= V1.2 =
+Fixed bug with inputs.
 
 = V1.1 =
 Updated style for <fieldset>.
