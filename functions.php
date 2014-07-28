@@ -182,6 +182,4 @@ add_action( 'save_post', 'camp_add_post_to_slider_ap' );
 add_filter( 'wp_title', 'camp_wp_title' );
 add_action( 'wp_head', 'camp_add_post_to_slider_fe' );
 add_action( 'camp_excerpt', 'camp_excerpt_for_slider' );
-add_action( 'camp_post_nav', 'camp_post_navigation' )
-
-?>
+add_action( 'camp_post_nav', 'camp_post_navigation' );

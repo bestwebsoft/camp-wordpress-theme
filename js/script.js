@@ -141,7 +141,11 @@
 					});
 				$( '#temp' ).before( '<div class = "camp-select-header" id = "temp-header"></div>' );
 				$( '#temp-header' ).prepend( '<img src = ' + camp_path + 'choise.jpg alt = "< >" />' );
-				$( '#temp-header' ).prepend( '<p class = "camp-header-text" id = "temp-text">Select element</p>' );
+
+				$( '#temp-header' ).prepend( '<p class = "camp-header-text" id = "temp-text"></p>' );
+				var camp_opt_first_element = $( '#temp-header' ).next().find( 'li:first' );
+				$( '#temp-header' ).find( 'p:first' ).text( camp_opt_first_element.text() );
+
 				$( '#temp-header' ).attr( 'id', this.id );
 				$( '#temp-img' ).attr( 'id', this.id );
 				$( '#temp-text' ).attr( 'id', this.id );
@@ -155,6 +159,7 @@
 			click: function() {
 				$( '.camp-select#' + this.id ).children( 'li' ).toggle( 'slow' );
 				$( '.camp-select#' + this.id ).children( 'li' ).attr( 'id', this.id );
+				$( '.camp-select#' + this.id ).css( 'opacity', '1' );
 			}
 		});
 
@@ -174,6 +179,7 @@
 			if ( $( e.target ).closest( '.camp-select-main#' + eID ).length == 0 ) {
 				var eID = $( e.target ).attr( 'id' );
 				$( '.camp-select' ).not( '#' + eID ).children( 'li' ).hide( 'slow' );
+				$( '.camp-select' ).not( '#' + eID ).css( 'opacity', '0' );
 			}
 		});
 
@@ -322,10 +328,6 @@
 		/* Clear Button */
 		$( 'input:reset' ).click(function() {
 			var parrentForm = $( this ).parents( 'form' );
-			$( parrentForm ).find( '.camp-select' ).each(function() {
-				$( 'p.camp-header-text#' + this.id ).text( 'Select element' );
-				$( this ).children( 'li' ).hide();
-			});
 			$( parrentForm ).find( '.camp-radio' ).attr( 'src', camp_path + 'radio.jpg' );
 			$( parrentForm ).find( '.camp-checkbox' ).attr( 'src', camp_path + 'checkbox.jpg' );
 			$( parrentForm ).find( 'input' ).removeAttr( 'checked' );
@@ -333,3 +335,35 @@
 		});
 	})
 })(jQuery);
+
+( function( $ ) {
+	$(document).ready(function() {
+		/* Check of previous selected items */
+		$( 'select' ).each(function() {
+			var index = $( this ).find( "option[selected]" ).index();
+			if ( index >= 0 ) {
+				/*add attr selected to select*/
+				var selected_select = $( this ).find( "option[selected]" ).parent().next().find( ".camp-select .camp-option" ).eq( index );
+				/*write text to active opt*/
+				$( selected_select ).parent().prev().find( "p:first" ).text( selected_select.text() );
+			}
+		});
+		/* Clear select elements */
+		$( 'input:reset' ).click( function() {
+			/* Clear original selects. */
+			$( 'select' ).each(function() {
+				/* set path */
+				var clear_select = $( this ).find( "option:first" );
+				var clear_selected_select = $( this ).find( "option[selected]" );
+				/* clear active opt */
+				$( clear_selected_select ).removeAttr( 'selected' );
+				$( clear_select ).attr( 'selected', 'selected' );
+			});
+			/* Clear custom selects. */
+			$( '.camp-select-main' ).each(function() {
+				var clear_select = $( this ).find( "ul li:first" );
+				$( clear_select ).parent().prev().find( 'p:first' ).text( clear_select.text() );
+			});
+		});
+	});
+} )( jQuery );

@@ -3,14 +3,14 @@ Contributors: the BestWebSoft team
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: blue,  two-columns, right-sidebar,  fixed-layout, custom-menu, featured-images, sticky-post, translation-ready, slider, custom-header, custom-background
 Requires at least: 3.3
-Tested up to: 3.8.1
-Stable tag: 1.2
+Tested up to: 3.9.1
+Stable tag: 1.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-Camp Wordpress theme is a simple solution to customize your website. It's a clean, simple and very powerful tool for organizing your blog or other categories of websites.
+Are you fond of that cozy feeling when you are sitting on the evening patio wrapped in a soft comforter and reading a mesmerizing book while taking small sips of hot tea? Do you wish to transcend this feeling to your website, so that your users will be immersed in the same enigmatic ambience? Then we are proud to introduce Camp - a theme that is exquisite like a rare old book, and easy to use like scissors. With this theme, your posts will receive a trace of antique wisdom - a captivating feature your readers are going to love! To top it off, this theme is compliant with all of the plugins, which were created by BestWebSoft, among which PDF & Print (http://wordpress.org/plugins/pdf-print/) and Portfolio plugins (http://wordpress.org/plugins/portfolio/) will be best for grasping the exquisite atmosphere of your website. This way, you can install those and rest assured that no compatibility issues will ever appear. See for yourself - check out the demo of this theme at http://bestwebsoft.com/wordpress_demo_theme/camp/
 
 = Copyrights for resources used in this theme =
 
@@ -102,19 +102,26 @@ From your Admin Panel, use the menu to select Appearance -> Menus. At 'Manage Lo
 
 == Upgrade Notice ==
 
+= V1.3 - 22.07.2014=
+* Bugfix: JS custom elements bugs were fixed. 
+* Update: We checked theme for WordPress 3.9.1 and updated readme.txt.
+
 = V1.2 - 07.02.2014 =
-* Fixed bug with inputs.
+* Changed: Fixed bug with inputs.
 
 = V1.1 - 29.01.2014 =
-* Updated style for <fieldset>.
+* Update: Updated style for <fieldset>.
 
 = V1.0.1 - 10.01.2014 =
-* Added info about copyrights for Resources used in this theme.
+* Update: Added info about copyrights for Resources used in this theme.
 
 = V1.0 =
 * Release Camp theme.
 
 == Changelog ==
+
+= V1.3 =
+JS custom elements bugs were fixed. We checked theme for WordPress 3.9.1 and updated readme.txt.
 
 = V1.2 =
 Fixed bug with inputs.

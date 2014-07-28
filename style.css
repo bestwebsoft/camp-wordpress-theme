@@ -3,8 +3,8 @@ Theme Name: Camp
 Theme URI: http://bestwebsoft.com/theme/camp/
 Author: the BestWebSoft team
 Author URI: https://github.com/bestwebsoft
-Description: Camp Wordpress theme is simply solution to customize your website
-Version: 1.2
+Description: Are you fond of that cozy feeling when you are sitting on the evening patio wrapped in a soft comforter and reading a mesmerizing book while taking small sips of hot tea? Do you wish to transcend this feeling to your website, so that your users will be immersed in the same enigmatic ambience? Then we are proud to introduce Camp - a theme that is exquisite like a rare old book, and easy to use like scissors. With this theme, your posts will receive a trace of antique wisdom - a captivating feature your readers are going to love! To top it off, this theme is compliant with all of the plugins, which were created by BestWebSoft, among which PDF & Print (http://wordpress.org/plugins/pdf-print/) and Portfolio plugins (http://wordpress.org/plugins/portfolio/) will be best for grasping the exquisite atmosphere of your website. This way, you can install those and rest assured that no compatibility issues will ever appear. See for yourself - check out the demo of this theme at http://bestwebsoft.com/wordpress_demo_theme/camp/
+Version: 1.3
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: blue,  two-columns, right-sidebar,  fixed-layout, custom-menu, featured-images, sticky-post, translation-ready, custom-header, custom-background
@@ -754,7 +754,6 @@ input[type = "button"]:active {
 	margin: 0;
 	position: relative;
 	width: 220px;
-	z-index: 100;
 }
 
 .camp-select-main .camp-select {
@@ -767,6 +766,7 @@ input[type = "button"]:active {
 	z-index: 100;
 	background: #fff;
 	width: 213px;
+	opacity: 0;
 }
 
 .camp-select li {
