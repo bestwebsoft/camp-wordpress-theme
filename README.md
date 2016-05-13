@@ -1,4 +1,4 @@
-<a href="http://bestweblayout.com/products/camp/" target=_blank>CyberGames WordPress Theme</a>
+<a href="http://bestweblayout.com/products/camp/" target=_blank>Camp WordPress Theme</a>
 ---------------------------------
 
 Are you fond of that cozy feeling when you are sitting on the evening patio wrapped in a soft comforter and reading a mesmerizing book while taking small sips of hot tea? Do you wish to transcend this feeling to your website, so that your users will be immersed in the same enigmatic ambience? Then we are proud to introduce Camp – a theme that is exquisite like a rare old book, and easy to use like scissors. With this theme, your posts will receive a trace of antique wisdom – a captivating feature your readers are going to love!
