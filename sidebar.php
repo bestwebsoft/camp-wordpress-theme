@@ -7,7 +7,7 @@
  * If no active widgets are in this sidebar, display default widgets.
  *
  * @subpackage Camp
- * @since Camp 1.0
+ * @since      Camp 1.0
  */ ?>
 <aside>
 	<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'Sidebar' ) ) {

@@ -1,13 +1,17 @@
 /*
 Theme Name: Camp
-Theme URI: http://bestwebsoft.com/theme/camp/
-Author: the BestWebSoft team
-Author URI: https://github.com/bestwebsoft
-Description: Are you fond of that cozy feeling when you are sitting on the evening patio wrapped in a soft comforter and reading a mesmerizing book while taking small sips of hot tea? Do you wish to transcend this feeling to your website, so that your users will be immersed in the same enigmatic ambience? Then we are proud to introduce Camp - a theme that is exquisite like a rare old book, and easy to use like scissors. With this theme, your posts will receive a trace of antique wisdom - a captivating feature your readers are going to love! To top it off, this theme is compliant with all of the plugins, which were created by BestWebSoft, among which PDF & Print (http://wordpress.org/plugins/pdf-print/) and Portfolio plugins (http://wordpress.org/plugins/portfolio/) will be best for grasping the exquisite atmosphere of your website. This way, you can install those and rest assured that no compatibility issues will ever appear. See for yourself - check out the demo of this theme at http://bestwebsoft.com/wordpress_demo_theme/camp/
-Version: 1.3
+Theme URI: http://bestweblayout.com/products/camp/
+Author: BestWebLayout
+Author URI: http://bestweblayout.com/
+Description: Are you fond of that cozy feeling when you are sitting on the evening patio wrapped in a soft comforter and reading a mesmerizing book while taking small sips of hot tea? Do you wish to transcend this feeling to your website, so that your users will be immersed in the same enigmatic ambience? Then we are proud to introduce Camp - a theme that is exquisite like a rare old book, and easy to use like scissors. With this theme, your posts will receive a trace of antique wisdom - a captivating feature your readers are going to love! To top it off, this theme is compliant with all of the plugins, which were created by BestWebSoft, among which PDF & Print (http://wordpress.org/plugins/pdf-print/) and Portfolio plugins (http://wordpress.org/plugins/portfolio/) will be best for grasping the exquisite atmosphere of your website. This way, you can install those and rest assured that no compatibility issues will ever appear. See for yourself - check out the demo of this theme at http://wp-demo-theme.bestweblayout.com/camp/
+Version: 1.5
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
-Tags: blue,  two-columns, right-sidebar,  fixed-layout, custom-menu, featured-images, sticky-post, translation-ready, custom-header, custom-background
+Tags: blue, two-columns, right-sidebar,  fixed-layout, custom-menu, featured-images, sticky-post, translation-ready, custom-header, custom-background
+Text Domain: camp
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 /**
@@ -18,6 +22,9 @@ Tags: blue,  two-columns, right-sidebar,  fixed-layout, custom-menu, featured-im
 * {
 	margin: 0;
 	padding: 0;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
 }
 
 html {
@@ -72,10 +79,10 @@ ul {
  */
 
 header {
-	background: #fff;
-	width: 100%;
-	min-width: 1200px;
 	z-index: 100;
+	min-width: 1200px;
+	width: 100%;
+	background: #fff;
 }
 
 /**
@@ -84,23 +91,23 @@ header {
  */
 
 .camp-head {
-	margin: 0 auto;
-	width: 942px;
-	padding-top: 20px;
-	word-wrap: break-word;
 	z-index: 100;
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 942px;
+	word-wrap: break-word;
 }
 
 /* Site Title */
 .camp-head-title {
-	margin-left: 30px;
 	float: left;
+	margin-left: 30px;
 	max-width: 100%;
 }
 
 .camp-head-title h1 {
-	font: bold 24px "Open Sans Semibold";
 	color: #000;
+	font: bold 24px "Open Sans Semibold";
 }
 
 .camp-head-title h1:first-letter {
@@ -108,14 +115,14 @@ header {
 }
 
 .camp-head-title h1 a {
-	font: bold 24px "Open Sans Semibold";
 	color: #000;
 	text-decoration: none;
+	font: bold 24px "Open Sans Semibold";
 }
 
 .camp-head-title p {
-	font: 13px "Open Sans";
 	color: #aaa;
+	font: 13px "Open Sans";
 }
 
 /**
@@ -124,10 +131,10 @@ header {
  */
 
 .camp-site-navigation {
+	z-index: 100;
+	float: right;
 	padding-top: 22px;
 	padding-bottom: 13px;
-	float: right;
-	z-index: 100;
 }
 
 .camp-site-navigation ul {
@@ -135,19 +142,19 @@ header {
 }
 
 .camp-site-navigation li {
-	float: left;
-	word-wrap: break-word;
 	position: relative;
 	z-index: 100;
+	float: left;
+	word-wrap: break-word;
 }
 
 .camp-site-navigation li a {
-	font: 14px "Open Sans";
-	color: #aaa;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 0 20px 30px 20px;
 	display: block;
+	padding: 0 20px 30px 20px;
+	color: #aaa;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 14px "Open Sans";
 }
 
 .camp-site-navigation li a:hover {
@@ -167,13 +174,13 @@ header {
 
 .camp-site-navigation .menu-item > .sub-menu,
 .camp-site-navigation .page_item > .children {
-	background: #fff;
-	border: 1px solid #ddd;
-	width: 220px;
 	position: absolute;
 	right: 0;
-	display: none;
 	z-index: 100;
+	display: none;
+	width: 220px;
+	border: 1px solid #ddd;
+	background: #fff;
 }
 
 .camp-site-navigation .menu-item:hover > .sub-menu,
@@ -181,11 +188,11 @@ header {
 	display: block;
 }
 
-.camp-site-navigation .menu-item  > .sub-menu .menu-item,
-.camp-site-navigation .page_item  > .children .page_item {
+.camp-site-navigation .menu-item > .sub-menu .menu-item,
+.camp-site-navigation .page_item > .children .page_item {
+	position: relative;
 	width: 220px;
 	border-top: 1px dashed #ddd;
-	position: relative;
 }
 
 .camp-site-navigation .menu-item .sub-menu .menu-item:first-child,
@@ -205,9 +212,9 @@ header {
 
 .camp-site-navigation .menu-item > .sub-menu .menu-item > .sub-menu,
 .camp-site-navigation .page_item > .children .page_item > .children {
-	margin-left: 0;
-	left: 100%;
 	top: 30%;
+	left: 100%;
+	margin-left: 0;
 }
 
 /**
@@ -216,19 +223,19 @@ header {
  */
 
 .camp-slider {
-	text-align: center;
-	max-height: 343px;
-	overflow: hidden;
 	position: relative;
 	clear: both;
+	overflow: hidden;
+	max-height: 343px;
+	text-align: center;
 }
 
 .camp-slider-btn {
+	position: absolute;
+	margin-top: 148px;
 	width: 47px;
 	height: 47px;
-	margin-top: 148px;
 	opacity: 0.1;
-	position: absolute;
 }
 
 .camp-slider #right {
@@ -242,47 +249,47 @@ header {
 }
 
 .camp-slide {
-	height: 343px;
-	width: 100%;
-	float: left;
 	position: relative;
+	float: left;
+	width: 100%;
+	height: 343px;
 }
 
 .camp-slide-img img {
-	height: 343px;
 	z-index: 0;
 	width: auto;
+	height: 343px;
 }
 
 .camp-slide-line {
-	height: 75px;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.3);
 	position: absolute;
 	bottom: 0;
 	z-index: 50;
+	width: 100%;
+	height: 75px;
+	background: rgba(0, 0, 0, 0.3);
 }
 
 .camp-slide-text {
-	padding: 15px 0;
-	height: 45px;
+	z-index: 1;
 	margin: 0 auto;
+	padding: 15px 0;
 	width: 1200px;
+	height: 45px;
 	text-align: justify;
 	text-overflow: ellipsis;
-	z-index: 1;
 }
 
 .camp-slide-text h1,
 .camp-slide-text h2 {
-	font-family: "Open Sans";
-	color: #fff;
 	margin-left: 162px;
+	color: #fff;
+	font-family: "Open Sans";
 }
 
 .camp-slide-text h1 {
-	font-size: 18px;
 	margin-bottom: 3px;
+	font-size: 18px;
 }
 
 .camp-slide-text h1 a {
@@ -299,11 +306,11 @@ header {
  * ----------------------------------------------------------------------------
  */
 
-.camp-main{
-	width: 942px;
-	padding: 29px 0 50px;
-	margin: auto;
+.camp-main {
 	overflow: hidden;
+	margin: auto;
+	padding: 29px 0 50px;
+	width: 942px;
 }
 
 .site-content {
@@ -312,9 +319,9 @@ header {
 }
 
 .site-content a {
-	font: 15px "Open Sans";
 	color: #3d8fd5;
 	text-decoration: none;
+	font: 15px "Open Sans";
 }
 
 .site-content a:hover {
@@ -329,13 +336,13 @@ header {
 .post,
 .hentry,
 .sticky {
-	background: #fff;
-	width: 540px;
-	border: 1px solid #d9d9d9;
-	padding: 21px 30px 18px;
-	margin-bottom: 28px;
 	position: relative;
 	z-index: 90;
+	margin-bottom: 28px;
+	padding: 21px 30px 18px;
+	width: 540px;
+	border: 1px solid #d9d9d9;
+	background: #fff;
 }
 
 /* Post Header */
@@ -344,65 +351,65 @@ header {
 }
 
 .camp-post-header .camp-post-title {
-	font: 21px "Open Sans";
-	color: #3d8fd5;
 	padding: 0 0 5px 0;
+	color: #3d8fd5;
+	font: 21px "Open Sans";
 }
 
 .camp-post-header .camp-post-title a {
-	font: 21px "Open Sans";
-	text-decoration: none;
 	color: #3d8fd5;
+	text-decoration: none;
+	font: 21px "Open Sans";
 }
 
 .camp-post-header .camp-post-meta {
-	font: 13px "Open Sans";
+	padding: 0 0 19px 0;
 	color: #aaa;
 	letter-spacing: -0.15px;
-	padding: 0 0 19px 0;
+	font: 13px "Open Sans";
 }
 
 .camp-post-header .camp-post-meta a {
-	font: 13px "Open Sans";
-	color: #aaa;
 	margin-left: 4px;
+	color: #aaa;
 	text-decoration: none;
+	font: 13px "Open Sans";
 }
 
 h1.camp-archive-header {
-	font: 21px "Open Sans Semibold";
 	color: #666;
+	font: 21px "Open Sans Semibold";
 }
 
 .site-content h1.camp-featured-post {
-	font: 13px "Open Sans";
-	color: #aaa;
+	margin-bottom: 10px;
+	padding: 10px 0;
 	border-top: 4px double #eee;
 	border-bottom: 4px double #eee;
-	padding: 10px 0;
+	color: #aaa;
 	text-align: center;
-	margin-bottom: 10px;
+	font: 13px "Open Sans";
 }
 
 /* Post Footer */
 .camp-post-footer {
-	min-width: 0;
-	padding: 15px 0 0 0;
-	border-top: 1px dashed #ddd;
 	position: relative;
 	clear: both;
+	padding: 15px 0 0 0;
+	min-width: 0;
+	border-top: 1px dashed #ddd;
 }
 
 .camp-post-footer .camp-tags {
-	font: 13px "Open Sans";
-	color: #aaa;
 	padding: 0;
+	color: #aaa;
+	font: 13px "Open Sans";
 }
 
 .camp-post-footer .camp-tags a {
-	font: 13px "Open Sans";
 	color: #aaa;
 	text-decoration: none;
+	font: 13px "Open Sans";
 }
 
 .camp-top-link {
@@ -417,81 +424,81 @@ h1.camp-archive-header {
 
 /* Post Content */
 .site-content p {
-	font: 13px "Open Sans";
-	color: #666;
-	line-height: 168%;
 	padding-bottom: 22px;
+	color: #666;
+	font: 13px "Open Sans";
+	line-height: 168%;
 }
 
 .site-content p a {
-	font: 13px "Open Sans";
 	color: #3d8fd5;
 	text-decoration: none;
+	font: 13px "Open Sans";
 }
 
 .site-content h1 {
-	font: 24px "Open Sans Bold";
-	color: #444;
 	padding: 0 0 16px 0;
+	color: #444;
+	font: 24px "Open Sans Bold";
 }
 
 .site-content h2 {
-	font: bold 21px "Open Sans Bold";
-	color: #444;
 	padding: 0 0 17px 0;
+	color: #444;
+	font: bold 21px "Open Sans Bold";
 }
 
 .site-content h3 {
-	font: bold 18px "Open Sans Bold";
-	color: #444;
 	padding: 0 0 20px 0;
+	color: #444;
+	font: bold 18px "Open Sans Bold";
 }
 
 .site-content h4 {
-	font: bold 15px "Open Sans Bold";
-	color: #444;
 	padding: 0 0 20px 0;
+	color: #444;
+	font: bold 15px "Open Sans Bold";
 }
 
 .site-content h5 {
-	font: bold 13px "Open Sans Bold";
-	color: #444;
 	padding: 0 0 23px 0;
+	color: #444;
+	font: bold 13px "Open Sans Bold";
 }
 
 .site-content h6 {
-	font: bold 11px "Open Sans Bold";
-	color: #444;
 	padding: 0 0 30px 0;
+	color: #444;
+	font: bold 11px "Open Sans Bold";
 }
 
 address {
-	font: 13px "Open Sans";
 	color: #666;
+	font: 13px "Open Sans";
 }
 
 .site-content table {
-	font: 13px "Open Sans";
-	color: #666;
-	border-spacing: 0;
-	border-bottom: 1px solid #ddd;
 	margin-bottom: 5px;
 	width: 100%;
-	line-height: 2;
+	border-spacing: 0;
 	border-collapse: collapse;
+	border-bottom: 1px solid #ddd;
+	color: #666;
+	font: 13px "Open Sans";
+	line-height: 2;
 }
 
 .site-content table th {
+	padding-right: 20px;
+	text-align: left;
+	text-transform: uppercase;
 	font: 13px "Open Sans";
 	font-weight: bold;
-	text-align: left;
-	padding-right: 20px;
-	text-transform: uppercase;
 }
 
 .site-content table th a {
-	font: 13px "Open Sans";
 	text-transform: uppercase;
+	font: 13px "Open Sans";
 }
 
 .site-content tr {
@@ -500,14 +507,14 @@ address {
 
 .site-content table td {
 	padding: 6px 10px 6px 0;
-	text-align: center;
 	vertical-align: middle;
+	text-align: center;
 }
 
 sup, sub {
+	display: inline-block;
 	color: #aaa;
 	letter-spacing: 0.4px;
-	display: inline-block;
 }
 
 sup {
@@ -519,28 +526,28 @@ sub {
 }
 
 ins {
-	text-decoration: none;
 	background: #fff9c0;
+	text-decoration: none;
 }
 
 pre {
-	background: #efefef;
-	font: 13px "Ubuntu Mono";
-	color: #999;
-	border: 1px solid #ddd;
-	padding: 13px 20px;
-	white-space: pre;
 	overflow: auto;
-	line-height: 165%;
 	margin-bottom: 27px;
+	padding: 13px 20px;
+	border: 1px solid #ddd;
+	background: #efefef;
+	color: #999;
+	white-space: pre;
+	font: 13px "Ubuntu Mono";
+	line-height: 165%;
 }
 
 cite,
 acronym,
 abbr {
-	font-style: normal;
-	text-decoration: none;
 	border: none;
+	text-decoration: none;
+	font-style: normal;
 }
 
 acronym,
@@ -550,19 +557,19 @@ abbr {
 
 blockquote {
 	position: relative;
-	padding: 0 35px;
 	margin-bottom: 2px;
+	padding: 0 35px;
 }
 
 blockquote p {
-	font: 14px "Open Sans";
 	color: #aaa;
+	font: 14px "Open Sans";
 }
 
 blockquote cite {
-	font: 14px "Open Sans Semibold";
-	color: #666;
 	margin-left: 2px;
+	color: #666;
+	font: 14px "Open Sans Semibold";
 }
 
 fieldset {
@@ -577,11 +584,10 @@ fieldset {
 
 /* Navigation */
 .camp-paging {
-	width: 100%;
-	margin: 0;
-	padding: 0;
 	float: none;
-	margin-top: -20px;
+	margin: -20px 0 0;
+	padding: 0;
+	width: 100%;
 }
 
 .camp-paging .camp-prev-post-link {
@@ -596,9 +602,9 @@ fieldset {
 ol,
 ul,
 dl {
-	font: 13px "Open Sans";
-	color: #666;
 	margin: 0 0 0 47px;
+	color: #666;
+	font: 13px "Open Sans";
 }
 
 dd {
@@ -631,10 +637,10 @@ ol {
 }
 
 .site-content dt {
-	font: bold 15px "Open Sans";
+	margin-bottom: 2px;
 	color: #444;
 	letter-spacing: -0.8px;
-	margin-bottom: 2px;
+	font: bold 15px "Open Sans";
 }
 
 .site-content img {
@@ -644,28 +650,28 @@ ol {
 
 /* Form Elements */
 .site-content form {
-	font: 14px "Open Sans";
 	color: #666;
+	font: 14px "Open Sans";
 }
 
 label {
-	font-size: 13px;
-	padding-top: 13px;
 	display: inline-block;
+	padding-top: 13px;
+	font-size: 13px;
 }
 
 input[type = "text"],
 textarea,
 input[type = "password"] {
-	font: 15px "Open Sans";
-	width: 210px;
-	padding: 0 5px;
-	border: 1px solid #dadada;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
 	overflow: auto;
 	margin-bottom: 5px;
+	padding: 0 5px;
+	width: 210px;
+	border: 1px solid #dadada;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font: 15px "Open Sans";
 }
 
 input[type = "text"],
@@ -675,64 +681,64 @@ input[type = "password"] {
 
 textarea {
 	margin-bottom: 19px;
-	height: 107px;
+	padding: 5px;
 	max-width: 528px;
 	max-height: 250px;
-	padding: 5px;
+	height: 107px;
 }
 
 /* Radiobutton and Checkbox */
 .camp-radio,
 .camp-checkbox {
+	position: relative;
+	top: 4px;
 	margin: 12px 9px 0 29px;
 	width: 18px;
 	height: 18px;
-	position: relative;
-	top: 4px;
 }
 
 /* File Upload */
 .camp-upload-file {
-	background: #f2f2f2;
-	font: 13px "Open Sans";
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	color: #666;
+	position: relative;
 	width: 460px;
 	height: 70px;
-	position: relative;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #f2f2f2;
+	color: #666;
+	font: 13px "Open Sans";
 }
 
 .camp-upload-img {
 	margin: 11px 0 0 10px;
-	cursor: pointer;
 	width: 222px;
 	height: 49px;
+	cursor: pointer;
 }
 
 .camp-upload-file .camp-upload-lbl {
 	position: relative;
-	padding: 0;
-	left: 18px;
 	top: -20px;
+	left: 18px;
+	padding: 0;
 }
 
 /* Buttons */
 input[type = "submit"],
 input[type = "reset"],
 input[type = "button"] {
-	background: #444;
-	font: 12px "Open Sans Bold";
-	color: #fff;
+	margin-right: 9px;
 	padding: 15px 19px;
-	text-transform: uppercase;
 	border: 1px solid #343434;
-	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #444;
+	color: #fff;
+	text-transform: uppercase;
 	letter-spacing: -0.8px;
-	margin-right: 9px;
+	font: 12px "Open Sans Bold";
 }
 
 input[type = "submit"] {
@@ -745,27 +751,27 @@ input[type = "reset"]:hover,
 input[type = "reset"]:active,
 input[type = "button"]:hover,
 input[type = "button"]:active {
-	background: #3d8fd5;
 	border: 1px solid #3376af;
+	background: #3d8fd5;
 }
 
 /* Select */
 .camp-select-main {
-	margin: 0;
 	position: relative;
+	margin: 0;
 	width: 220px;
 }
 
 .camp-select-main .camp-select {
-	border: 1px solid #ddd;
-	list-style: none;
-	padding-right: 5px;
-	margin: 0 0 22px 0;
 	position: absolute;
 	top: 45px;
 	z-index: 100;
-	background: #fff;
+	margin: 0 0 22px 0;
+	padding-right: 5px;
 	width: 213px;
+	border: 1px solid #ddd;
+	background: #fff;
+	list-style: none;
 	opacity: 0;
 }
 
@@ -782,43 +788,43 @@ input[type = "button"]:active {
 }
 
 .camp-select-header {
+	position: relative;
+	overflow: hidden;
+	padding: 14px 10px;
 	width: 200px;
-	background: #ddd;
-	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
-	padding: 14px 10px;
+	border-radius: 2px;
+	background: #ddd;
 	cursor: pointer;
-	overflow: hidden;
-	position: relative;
 }
 
 .camp-select-header img {
 	position: absolute;
 	top: 15px;
 	right: 20px;
-	cursor: pointer;
 	width: 8px;
 	height: 17px;
+	cursor: pointer;
 }
 
 .camp-select-header .camp-header-text {
-	font: 13px "Open Sans";
-	color: #666;
-	width: 180px;
 	overflow: hidden;
-	height: 18px;
 	padding: 0;
+	width: 180px;
+	height: 18px;
+	color: #666;
+	font: 13px "Open Sans";
 }
 
 .camp-select .camp-option-group {
-	color: #aaa;
 	margin: 2px 5px 12px 8px;
+	color: #aaa;
 }
 
 .camp-select .camp-option {
-	color: #666;
 	margin: 0 0 12px 28px;
+	color: #666;
 }
 
 .camp-select .camp-option:hover {
@@ -868,18 +874,17 @@ input[type = "button"]:active {
 }
 
 .image-attachment .attachment {
-	text-align: center;
 	margin-top: 35px;
+	text-align: center;
 }
-
 
 /* Comments */
 #comments,
 #respond h3 {
-	font: 21px "Open Sans Bold";
-	color: #4f4f4f;
 	margin: 10px 0;
 	padding: 0;
+	color: #4f4f4f;
+	font: 21px "Open Sans Bold";
 }
 
 .navigation {
@@ -898,24 +903,24 @@ input[type = "button"]:active {
 .commentlist .-pingback,
 .commentlist .trackback,
 .bypostauthor {
+	margin: 0;
 	border-top: 2px solid #fff;
 	background: #f5f5f5;
 	list-style: none;
-	margin: 0;
 }
 
 .commentlist .pingback .comment-author:before {
+	color: #666;
 	content: 'Pingback: ';
-	font: 15px "Open Sans";
-	color: #666;
 	vertical-align: top;
+	font: 15px "Open Sans";
 }
 
 .commentlist .pingback .comment-author:before {
-	content: 'Trackback: ';
-	font: 15px "Open Sans";
 	color: #666;
+	content: 'Trackback: ';
 	vertical-align: top;
+	font: 15px "Open Sans";
 }
 
 .commentlist .pingback p,
@@ -947,10 +952,10 @@ input[type = "button"]:active {
 
 .comment-author .fn,
 .comment-author .says {
-	font: 15px "Open Sans";
+	margin-left: 5px;
 	color: #666;
 	vertical-align: bottom;
-	margin-left: 5px;
+	font: 15px "Open Sans";
 }
 
 .comment-author a {
@@ -974,8 +979,8 @@ input[type = "button"]:active {
 }
 
 .reply {
-	font: 17px "Opne Sans";
 	margin-left: 5px;
+	font: 17px "Opne Sans";
 }
 
 #reply-title small {
@@ -988,10 +993,10 @@ input[type = "button"]:active {
 }
 
 #respond label {
-	font: 15px "Open Sans";
+	display: block;
 	margin-left: 5px;
 	padding-top: 0;
-	display: block;
+	font: 15px "Open Sans";
 }
 
 #respond #commentform {
@@ -1005,15 +1010,15 @@ input[type = "button"]:active {
 /* Add post in Slider */
 .site-content #meta-for-slider {
 	position: absolute;
-	right: 0;
 	top: 11px;
+	right: 0;
 }
 
 #meta-for-slider label {
-	font: 13px "Open Sans";
 	display: inline;
 	padding: 0;
 	color: #aaa;
+	font: 13px "Open Sans";
 }
 
 #meta-for-slider .camp-checkbox {
@@ -1052,9 +1057,9 @@ input[type = "button"]:active {
 /* Gallery */
 
 .gallery_box_single p {
-	padding-bottom: 0;
-	padding-top: 22px;
 	margin: 0;
+	padding-top: 22px;
+	padding-bottom: 0;
 }
 
 /* Portfolio */
@@ -1098,8 +1103,8 @@ aside {
 }
 
 aside p {
-	font: 15px "Open Sans";
 	color: #666;
+	font: 15px "Open Sans";
 }
 
 aside ul {
@@ -1112,16 +1117,16 @@ aside li {
 
 /* Widgets */
 .widget {
-	padding: 14px 15px 15px 30px;
 	margin-bottom: 19px;
-	background: #fff;
+	padding: 14px 15px 15px 30px;
 	border: 1px solid #dadada;
+	background: #fff;
 	word-wrap: break-word;
 }
 
 .widget li {
-	list-style: none;
 	margin-bottom: 8px;
+	list-style: none;
 }
 
 .widget li:first-child {
@@ -1141,22 +1146,22 @@ aside li {
 }
 
 .widget h2 {
-	font: bold 12px "Open Sans";
-	color: #4f4f4f;
-	text-transform: uppercase;
-	border: 1px solid #dadada;
-	background: #ececec;
+	margin: 0 0 27px -31px;
 	padding: 11px 0 9px 30px;
 	width: 270px;
-	margin: 0 0 27px -31px;
+	border: 1px solid #dadada;
+	background: #ececec;
+	color: #4f4f4f;
+	text-transform: uppercase;
 	letter-spacing: -0.8px;
+	font: bold 12px "Open Sans";
 }
 
 .widget a {
-	font: 13px "Open Sans";
-	color: #858585;
 	margin-top: 8px;
+	color: #858585;
 	text-decoration: none;
+	font: 13px "Open Sans";
 }
 
 .widget a:hover {
@@ -1170,10 +1175,10 @@ aside li {
 
 /* Search Form */
 .widget_search {
-	background: none;
-	border: none;
-	padding: 0;
 	margin-bottom: 18px;
+	padding: 0;
+	border: none;
+	background: none;
 }
 
 .widget_search h2 {
@@ -1181,59 +1186,59 @@ aside li {
 }
 
 .camp-search-form {
-	height: 49px;
 	width: 302px;
+	height: 49px;
 }
 
 .camp-search-txt#s {
-	font: 14px "Open Sans";
-	letter-spacing: -0.8px;
+	position: relative;
+	top: -20px;
 	width: 226px;
 	height: 46px;
 	border: 1px solid #dadada;
-	position: relative;
-	top: -20px;
+	letter-spacing: -0.8px;
+	font: 14px "Open Sans";
 }
 
 .camp-search-btn {
+	margin-left: 4px;
+	padding: 0;
 	border: none;
 	background: none;
-	margin-left: 4px;
 	cursor: pointer;
-	padding: 0;
 }
 
 /* Recent Comments */
 li .recentcomments {
-	font: 13px "Open Sans";
 	color: #aaa;
+	font: 13px "Open Sans";
 }
 
 /* Calendar */
 .widget_calendar {
-	width: 280px;
 	padding: 14px 10px 15px;
+	width: 280px;
 }
 
 .widget_calendar h2 {
-	width: 270px;
 	margin-left: -11px;
+	width: 270px;
 }
 
 .widget_calendar table {
 	width: 280px;
-	font: 14px "Open Sans";
 	color: #444;
+	font: 14px "Open Sans";
 }
 
-.widget_calendar table a{
-	font: 14px "Open Sans";
+.widget_calendar table a {
 	color: #3d8fd5;
+	font: 14px "Open Sans";
 }
 
 .widget_calendar #today {
-	font-weight: bold;
 	color: #f00;
+	font-weight: bold;
 }
 
 .widget_calendar tfoot #next {
@@ -1242,8 +1247,8 @@ li .recentcomments {
 
 /* Widget Text */
 .widget_text {
-	font: 13px "Open Sans";
 	color: #666;
+	font: 13px "Open Sans";
 }
 
 .widget_text ul,
@@ -1268,32 +1273,32 @@ li .recentcomments {
  */
 
 footer {
-	background: #fff;
-	border-top: 1px solid #d4d5d5;
-	width: 100%;
 	min-width: 1200px;
+	width: 100%;
+	border-top: 1px solid #d4d5d5;
+	background: #fff;
 }
 
 .camp-footer {
-	font: 13px "Open Sans";
-	color: #aaa;
-	width: 890px;
-	padding: 30px 0px;
-	margin: 0 auto;
 	overflow: hidden;
+	margin: 0 auto;
+	padding: 30px 0;
+	width: 890px;
+	color: #aaa;
+	font: 13px "Open Sans";
 }
 
 .camp-footer a {
-	font: 13px "Open Sans";
 	color: #3d8fd5;
 	text-decoration: none;
+	font: 13px "Open Sans";
 }
 
 .camp-cpy {
 	float: left;
 	margin-left: 5px;
-	word-wrap: break-word;
 	max-width: 60%;
+	word-wrap: break-word;
 }
 
 .camp-author {
@@ -1304,10 +1309,10 @@ footer {
 /* Images */
 .wp-caption .wp-caption-text,
 .gallery-caption {
-	font:italic 13px "Open Sans";
-	color: #aaa;
-	margin-top:5px;
+	margin-top: 5px;
 	padding-bottom: 18px;
+	color: #aaa;
+	font: italic 13px "Open Sans";
 }
 
 .alignleft {
@@ -1320,8 +1325,8 @@ footer {
 
 .aligncenter {
 	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 }
 
 img.alignleft {
@@ -1346,4 +1351,33 @@ img.aligncenter {
 
 img.alignnone {
 	margin: 5px 0;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	position: absolute !important;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+}
+
+.screen-reader-text:focus {
+	top: 5px;
+	left: 5px;
+	z-index: 100000;
+	display: block;
+	clip: auto !important;
+	padding: 15px 23px 14px;
+	width: auto;
+	height: auto;
+	border-radius: 3px;
+	background-color: #f1f1f1;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	color: #21759b;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: normal; /* Above WP toolbar. */
 }

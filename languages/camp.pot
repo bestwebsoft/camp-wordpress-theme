@@ -1,8 +1,9 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Camp\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-24 18:47+0200\n"
+"POT-Creation-Date: 2016-05-11 15:42+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <info@bestwebsoft.com>\n"
@@ -12,73 +13,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:15
+#, fuzzy
 msgid "Not found"
-msgstr ""
+msgstr "Ничего не найдено"
 
 #: archive.php:13
-#, php-format
+#, fuzzy, php-format
 msgid "Archives: %s"
-msgstr ""
+msgstr "Метки архива: %s"
 
-#: archive.php:20
-#: category.php:20
-#: index.php:21
-#: page.php:14
-#: tag.php:22
+#: archive.php:20 category.php:20 index.php:21 page.php:14 tag.php:22
+#, fuzzy
 msgid "Top"
-msgstr ""
+msgstr "Наверх"
 
 #: category.php:13
-#, php-format
+#, fuzzy, php-format
 msgid "Category: %s"
-msgstr ""
+msgstr "Категория: %s"
 
 #: comments.php:20
+#, fuzzy
 msgid "Comments are closed."
-msgstr ""
+msgstr "Комментарии запрещены"
 
-#: comments.php:25
+#: comments.php:26
 #, php-format
 msgid "One response to &ldquo; %s &rdquo;"
 msgstr ""
 
-#: comments.php:27
+#: comments.php:28
 #, php-format
 msgid "%d Responses to &ldquo; %s &rdquo;  "
 msgstr ""
 
-#: comments.php:29
+#: comments.php:30
 #, php-format
 msgid "%d Responses to &ldquo; %s &rdquo;"
 msgstr ""
 
-#: comments.php:31
+#: comments.php:32
 #, php-format
 msgid "%d Responses to &ldquo; %s &rdquo; "
 msgstr ""
 
-#: comments.php:38
-#: comments.php:60
+#: comments.php:40 comments.php:62
+#, fuzzy
 msgid "&larr; Older comments"
-msgstr ""
+msgstr "&larr; Предыдущие комментарии"
 
-#: comments.php:41
-#: comments.php:63
+#: comments.php:43 comments.php:65
+#, fuzzy
 msgid "Newer comments &rarr;"
-msgstr ""
+msgstr "Следующие комментарии &rarr;"
 
-#: comments.php:48
-#: functions.php:134
+#: comments.php:50 functions.php:136
+#, fuzzy
 msgid "Reply"
-msgstr ""
+msgstr "Ответить"
 
 #: content-none.php:11
+#, fuzzy
 msgid "Nothing Found"
-msgstr ""
+msgstr "Ничего не найдено"
 
 #: content-none.php:12
 msgid "Try to search again"
@@ -88,91 +89,99 @@ msgstr ""
 msgid "Featured post"
 msgstr ""
 
-#: content.php:24
+#: content.php:28
 #, php-format
 msgid "Posted on %s"
 msgstr ""
 
-#: content.php:26
-#: content.php:28
+#: content.php:30 content.php:32
 msgid "in"
 msgstr ""
 
-#: content.php:35
+#: content.php:41
+#, fuzzy
 msgid "&larr; Previous"
-msgstr ""
+msgstr "&larr; Предыдущее изображение"
 
-#: content.php:38
+#: content.php:44
 msgid "Next &rarr;"
 msgstr ""
 
-#: content.php:53
+#: content.php:60
+#, fuzzy
 msgid "Tags: "
-msgstr ""
+msgstr "Метки: "
 
-#: content.php:57
+#: content.php:64
+#, fuzzy
 msgid "Add to slider?"
-msgstr ""
+msgstr "Добавить в слайдер"
 
 #: footer.php:17
 #, php-format
 msgid "Powered by %s and %s"
 msgstr ""
 
-#: functions.php:70
+#: functions.php:60
+#, fuzzy
 msgid "For Slider"
-msgstr ""
+msgstr "в слайдере"
 
-#: functions.php:80
+#: functions.php:72
 msgid "If you want to add this post to slider, choose the checkbox &nbsp;"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:121
+#, fuzzy
 msgid "says:"
-msgstr ""
+msgstr "сказал:"
 
-#: functions.php:129
+#: functions.php:126
 msgid " at "
 msgstr ""
 
-#: functions.php:135
+#: functions.php:138
+#, fuzzy
 msgid "Edit"
-msgstr ""
+msgstr "Изменить"
 
-#: functions.php:144
+#: functions.php:148
+#, fuzzy
 msgid "Newer posts &rarr;"
-msgstr ""
+msgstr "Новые посты &rarr;"
 
-#: functions.php:149
+#: functions.php:153
+#, fuzzy
 msgid "&larr; Older posts"
-msgstr ""
+msgstr "&larr; Предыдущие посты"
 
-#: functions.php:155
+#: functions.php:159
 msgid "Next post &rarr;"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:164
 msgid "&larr; Previous post"
 msgstr ""
 
-#: functions.php:173
-#, php-format
+#: functions.php:180
+#, fuzzy, php-format
 msgid " | Page %s"
-msgstr ""
+msgstr "Станица %s"
 
 #: search.php:11
-#, php-format
+#, fuzzy, php-format
 msgid "Search results for: %s"
-msgstr ""
+msgstr "Результат поиска для: %s"
 
 #: searchform.php:2
+#, fuzzy
 msgid "Enter search keyword"
-msgstr ""
+msgstr "Введите слово"
 
 #: tag.php:15
-#, php-format
+#, fuzzy, php-format
 msgid "Tag: %s"
-msgstr ""
+msgstr "Архив тега: \"%s\""
 
 #~ msgid "Sorry, nothing found."
 #~ msgstr "Ничего не найдено"

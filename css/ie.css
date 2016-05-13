@@ -2,10 +2,21 @@ img {
 	border: none;
 }
 
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.site-content input[type = "text"],
+.site-content input[type = "password"],
+.site-content textarea,
+.camp-select-header {
+	position: relative;
+	behavior: url('../js/pie/PIE.htc');
+}
+
 /* Form Elements */
-input[type = "text"],
+input[type="text"],
 textarea,
-input[type = "password"] {
+input[type="password"] {
 	overflow: visible;
 	padding-top: 10px;
 	height: 40px;
@@ -15,8 +26,8 @@ input[type = "password"] {
 .camp-slide-line {
 	background: transparent;
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000)"; /* IE8 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);   /* IE6 & 7 */
-      zoom: 1;
+	filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000)"; /* IE6 & 7 */
+	zoom: 1;
 }
 
 /* IE8 */
@@ -47,15 +58,15 @@ input[type = "password"] {
 }
 
 /* Form Elements */
-.ie7 label input[type = "password"] {
+.ie7 label input[type="password"] {
 	margin: 0;
 	padding: 0;
 }
 
 /* Buttons */
-.ie7 input[type = "submit"],
-.ie7 input[type = "reset"],
-.ie7 input[type = "button"] {
+.ie7 input[type="submit"],
+.ie7 input[type="reset"],
+.ie7 input[type="button"] {
 	padding: 13px 8px;
 }
 
@@ -75,10 +86,10 @@ input[type = "password"] {
 }
 
 .ie7 .camp-search-btn {
-	width: 49px;
-	height: 49px;
 	position: relative;
 	top: -10px;
+	width: 49px;
+	height: 49px;
 }
 
 .ie7 .camp-search-txt#s {

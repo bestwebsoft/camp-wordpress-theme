@@ -186,15 +186,15 @@
 		/* Sub Menu */
 		$( '.camp-site-navigation' ).find( '.sub-menu', '.children' ).children( 'li' ).on( {
 			mouseenter: function() {
-				$( this ).children( 'ul' )
-					.each(function() {
-						if ( $( 'html' ).attr( 'class' ) == 'ie7' || $( 'html' ).attr( 'class' ) == 'ie8' ) {
-							$( this ).show();
-						}
-						if ( $( this ).offset().left + $( this ).width() > $( window ).width() ) {
-							$( this ).css( { 'top': '60%', 'left': '-222px' } );
-						}
-					});
+				$( this ).children( 'ul' ).each(function() {
+					if ( $( 'html' ).attr( 'class' ) == 'ie7' || $( 'html' ).attr( 'class' ) == 'ie8' ) {
+						$( this ).show();
+					}
+					if ( $( this ).offset().left + $( this ).width() > $( window ).width() ) {
+						var zIndex = parseInt( $( this ).css('z-index') ) + 5;
+						$( this ).css( { 'left': '-222px', 'z-index': zIndex } );
+					}
+				});
 			},
 			mouseleave: function() {
 				if ( $( 'html' ).attr( 'class' ) == 'ie7' || $( 'html' ).attr( 'class' ) == 'ie8' ) {

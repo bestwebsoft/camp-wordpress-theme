@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Camp\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-24 18:47+0200\n"
+"POT-Creation-Date: 2016-05-11 15:43+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: BestWebSoft\n"
 "Language-Team: BestWebSoft <info@bestwebsoft.com>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:15
@@ -37,35 +37,35 @@ msgstr "Категория: %s"
 msgid "Comments are closed."
 msgstr "Комментарии закрыты."
 
-#: comments.php:25
+#: comments.php:26
 #, php-format
 msgid "One response to &ldquo; %s &rdquo;"
 msgstr "Один ответ к &ldquo; %s &rdquo;"
 
-#: comments.php:27
+#: comments.php:28
 #, php-format
 msgid "%d Responses to &ldquo; %s &rdquo;  "
 msgstr "%d Ответ к &ldquo; %s &rdquo;  "
 
-#: comments.php:29
+#: comments.php:30
 #, php-format
 msgid "%d Responses to &ldquo; %s &rdquo;"
 msgstr "%d Ответа к &ldquo; %s &rdquo;"
 
-#: comments.php:31
+#: comments.php:32
 #, php-format
 msgid "%d Responses to &ldquo; %s &rdquo; "
 msgstr "%d Ответов к &ldquo; %s &rdquo; "
 
-#: comments.php:38 comments.php:60
+#: comments.php:40 comments.php:62
 msgid "&larr; Older comments"
 msgstr "&larr; Предыдущие комментарии"
 
-#: comments.php:41 comments.php:63
+#: comments.php:43 comments.php:65
 msgid "Newer comments &rarr;"
 msgstr "Новые комментарии &rarr;"
 
-#: comments.php:48 functions.php:134
+#: comments.php:50 functions.php:136
 msgid "Reply"
 msgstr "Ответить"
 
@@ -81,28 +81,28 @@ msgstr "Попытайтесь поискать еще"
 msgid "Featured post"
 msgstr "Прикрепленная запись"
 
-#: content.php:24
+#: content.php:28
 #, php-format
 msgid "Posted on %s"
 msgstr "Опубликовано %s"
 
-#: content.php:26 content.php:28
+#: content.php:30 content.php:32
 msgid "in"
 msgstr "в"
 
-#: content.php:35
+#: content.php:41
 msgid "&larr; Previous"
 msgstr "&larr; Предыдущее"
 
-#: content.php:38
+#: content.php:44
 msgid "Next &rarr;"
 msgstr "Слудующее &rarr;"
 
-#: content.php:53
+#: content.php:60
 msgid "Tags: "
-msgstr "Теги: "
+msgstr "Метки: "
 
-#: content.php:57
+#: content.php:64
 msgid "Add to slider?"
 msgstr "Добавить в слайдер?"
 
@@ -111,43 +111,43 @@ msgstr "Добавить в слайдер?"
 msgid "Powered by %s and %s"
 msgstr "Создано %s и %s"
 
-#: functions.php:70
+#: functions.php:60
 msgid "For Slider"
-msgstr "Для стайдера"
+msgstr "В стайдер"
 
-#: functions.php:80
+#: functions.php:72
 msgid "If you want to add this post to slider, choose the checkbox &nbsp;"
-msgstr "Если вы хотите добавить эту запись в слайдер, поставьте галочку &nbsp;"
+msgstr "Если вы хотите добавить эту запись в слайдер, отметьте галочку &nbsp;"
 
-#: functions.php:125
+#: functions.php:121
 msgid "says:"
 msgstr "сказал:"
 
-#: functions.php:129
+#: functions.php:126
 msgid " at "
 msgstr " в "
 
-#: functions.php:135
+#: functions.php:138
 msgid "Edit"
 msgstr "Редактировать"
 
-#: functions.php:144
+#: functions.php:148
 msgid "Newer posts &rarr;"
 msgstr "Новые записи &rarr;"
 
-#: functions.php:149
+#: functions.php:153
 msgid "&larr; Older posts"
 msgstr "&larr; Предыдущие записи"
 
-#: functions.php:155
+#: functions.php:159
 msgid "Next post &rarr;"
 msgstr "Следующая запись &rarr;"
 
-#: functions.php:160
+#: functions.php:164
 msgid "&larr; Previous post"
 msgstr "&larr; Предыдущая запись"
 
-#: functions.php:173
+#: functions.php:180
 #, php-format
 msgid " | Page %s"
 msgstr " | Страница %s"
@@ -155,7 +155,7 @@ msgstr " | Страница %s"
 #: search.php:11
 #, php-format
 msgid "Search results for: %s"
-msgstr "Результат поиска для: %s"
+msgstr "Результаты поиска для: %s"
 
 #: searchform.php:2
 msgid "Enter search keyword"
@@ -164,7 +164,7 @@ msgstr "Введите ключевое слово"
 #: tag.php:15
 #, php-format
 msgid "Tag: %s"
-msgstr "Тег: %s"
+msgstr "Метка: %s"
 
 #~ msgid "Sorry, nothing found."
 #~ msgstr "Ничего не найдено"

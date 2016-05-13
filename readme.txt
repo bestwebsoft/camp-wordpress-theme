@@ -1,16 +1,16 @@
 === Camp ===
-Contributors: the BestWebSoft team
+Contributors: BestWebLayout, BestWebSoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
-Tags: blue,  two-columns, right-sidebar,  fixed-layout, custom-menu, featured-images, sticky-post, translation-ready, slider, custom-header, custom-background
-Requires at least: 3.3
-Tested up to: 3.9.1
-Stable tag: 1.3
+Tags: blue, two-columns, right-sidebar,  fixed-layout, custom-menu, featured-images, sticky-post, translation-ready, slider, custom-header, custom-background
+Requires at least: 4.1
+Tested up to: 4.6-trunk
+Stable tag: 1.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-Are you fond of that cozy feeling when you are sitting on the evening patio wrapped in a soft comforter and reading a mesmerizing book while taking small sips of hot tea? Do you wish to transcend this feeling to your website, so that your users will be immersed in the same enigmatic ambience? Then we are proud to introduce Camp - a theme that is exquisite like a rare old book, and easy to use like scissors. With this theme, your posts will receive a trace of antique wisdom - a captivating feature your readers are going to love! To top it off, this theme is compliant with all of the plugins, which were created by BestWebSoft, among which PDF & Print (http://wordpress.org/plugins/pdf-print/) and Portfolio plugins (http://wordpress.org/plugins/portfolio/) will be best for grasping the exquisite atmosphere of your website. This way, you can install those and rest assured that no compatibility issues will ever appear. See for yourself - check out the demo of this theme at http://bestwebsoft.com/wordpress_demo_theme/camp/
+Are you fond of that cozy feeling when you are sitting on the evening patio wrapped in a soft comforter and reading a mesmerizing book while taking small sips of hot tea? Do you wish to transcend this feeling to your website, so that your users will be immersed in the same enigmatic ambience? Then we are proud to introduce Camp - a theme that is exquisite like a rare old book, and easy to use like scissors. With this theme, your posts will receive a trace of antique wisdom - a captivating feature your readers are going to love! To top it off, this theme is compliant with all of the plugins, which were created by BestWebSoft, among which PDF & Print (http://wordpress.org/plugins/pdf-print/) and Portfolio plugins (http://wordpress.org/plugins/portfolio/) will be best for grasping the exquisite atmosphere of your website. This way, you can install those and rest assured that no compatibility issues will ever appear. See for yourself - check out the demo of this theme at http://wp-demo-theme.bestweblayout.com/camp/
 
 = Copyrights for resources used in this theme =
 
@@ -22,7 +22,7 @@ Copyrights for Resources used in this theme.
    - html5.js which are under under MIT and GPL2 Licenses Version 2
    - pie.htc which are under the Apache License Version 2.0 and GPL Version 2.
 3. In Camp Theme used images from "/images" which are under GPL license.
-4. Everything else used in this theme has been created by the Bestwebsoft team,
+4. Everything else used in this theme has been created by BestWebLayout,
    especially for Camp theme and is distributed under GPL license.
 
 = Translation =
@@ -86,7 +86,11 @@ From your Admin Panel, use the menu to select Plugins -> Add New. Search the nec
 
 = How to change language from English to Russian? =
 
-In the main catalogue of your WordPress site find file wp-config.php, open it and change define ('WPLANG', ''); to ('WPLANG', 'ru_RU');
+WordPress v4.0 and above:
+Change the language in the admin settings screen. Settings > General > Site Language.
+
+WordPress v3.9.2 and below:
+In the main catalog of your WordPress site, please find wp-config.php file, open it and change define( 'WPLANG', '' ); for define( 'WPLANG', 'ru_RU' ).
 
 = How can I create a custom menu? =
 
@@ -100,7 +104,19 @@ From your Admin Panel, use the menu to select Appearance -> Menus. At 'Manage Lo
 
 1. Theme home page.
 
-== Upgrade Notice ==
+== Changelog ==
+
+= V1.5 - 11.05.2016 =
+* Update: Screenshot was updated to size 1200x900.
+* Update: screen-reader-text css class was added to style.css.
+* Bugfix: Fixed mismatch coding standards.
+* Update: The theme has been tested for the compatibility with WordPress v.4.6-alpha.
+
+= V1.4 - 21.04.2015 =
+* Bugfix: Permalink was removed from the title of a single post/page.
+* Update: We updated the theme to support features in WordPress 4.1.1.
+* Update: Theme screenshot was updated.
+* Update: The following files were updated: style.css, header.php, functions.php, content.php.
 
 = V1.3 - 22.07.2014=
 * Bugfix: JS custom elements bugs were fixed. 
@@ -118,7 +134,13 @@ From your Admin Panel, use the menu to select Appearance -> Menus. At 'Manage Lo
 = V1.0 =
 * Release Camp theme.
 
-== Changelog ==
+== Upgrade Notice ==
+
+= V1.5 =
+Screenshot was updated to size 1200x900. screen-reader-text css class was added to style.css. Fixed mismatch coding standards. The theme has been tested for the compatibility with WordPress v.4.6-alpha.
+
+= V1.4 =
+Permalink was removed from the title of a single post/page. We updated the theme to support features in WordPress 4.1.1. Theme screenshot was updated. The following files were updated: style.css, header.php, functions.php, content.php.
 
 = V1.3 =
 JS custom elements bugs were fixed. We checked theme for WordPress 3.9.1 and updated readme.txt.
