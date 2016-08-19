@@ -10,7 +10,7 @@ get_header(); ?>
 <?php if ( have_posts() ) :
 	$first = true; ?>
 	<h1 class = "camp-archive-header">
-		<?php printf( __( 'Archives: %s', 'camp' ), get_the_date( 'F Y' ) ); ?>
+		<?php the_archive_title(); ?>
 	</h1>
 	<div id = "content" class = "site-content">
 		<?php while ( have_posts() ) : the_post(); ?>

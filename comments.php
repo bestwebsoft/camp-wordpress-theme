@@ -16,21 +16,9 @@ if ( post_password_required() ) {
 	return;
 } ?>
 <div id="comments">
-	<?php if ( ! comments_open() && ! is_page() ) {
-		echo '<p>' . __( 'Comments are closed.', 'camp' ) . '</p>';
-	}
-	if ( have_comments() ) : ?>
+	<?php if ( have_comments() && comments_open() ) : ?>
 		<h3 class="comments-title">
-			<?php $camp_last_nimber = substr( get_comments_number(), - 1 );
-			if ( 1 == get_comments_number() ) {
-				printf( __( 'One response to &ldquo; %s &rdquo;', 'camp' ), get_the_title() );
-			} elseif ( 1 == $camp_last_nimber && get_comments_number() > 20 ) {
-				printf( __( '%d Responses to &ldquo; %s &rdquo;  ', 'camp' ), get_comments_number(), get_the_title() );
-			} elseif ( $camp_last_nimber > 1 && $camp_last_nimber < 5 && ( get_comments_number() > 20 || get_comments_number() < 10 ) ) {
-				printf( __( '%d Responses to &ldquo; %s &rdquo;', 'camp' ), get_comments_number(), get_the_title() );
-			} else {
-				printf( __( '%d Responses to &ldquo; %s &rdquo; ', 'camp' ), get_comments_number(), get_the_title() );
-			} ?>
+			<?php printf( _n( 'One response to &ldquo; %2$s &rdquo;', '%1$s responses to &ldquo; %2$s &rdquo;', get_comments_number(), 'camp' ), number_format_i18n( get_comments_number() ), get_the_title() ); ?>
 		</h3>
 
 		<!-- comment navigation -->
@@ -66,6 +54,8 @@ if ( post_password_required() ) {
 				</div>
 			</div>
 		<?php endif;
+	else :
+		echo '<p>' . __( 'Comments are closed.', 'camp' ) . '</p>';
 	endif;
 	comment_form(); ?>
 </div> <!-- .comments -->

@@ -25,13 +25,19 @@ if ( get_post_meta( get_the_ID(), 'camp_in_slider', 'yes' ) ) {
 			the_title();
 		} ?>
 	</h1>
-	<p class="camp-post-meta"><?php printf( __( 'Posted on %s', 'camp' ), get_the_date( 'j F, Y' ) );
+	<p class="camp-post-meta">
+		<?php _e( 'Posted on ', 'camp' );
+		if ( is_singular() ) { ?>
+			<a href="<?php echo esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_date(); ?></a>
+		<?php } else { ?>
+			<a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_date(); ?></a>
+		<?php }
 		if ( is_attachment() && wp_attachment_is_image() ) {
 			echo __( 'in', 'camp' ) . ' <a href = "' . get_permalink( $post->post_parent ) . '">' . get_the_title( $post->post_parent ) . '</a>';
 		} elseif ( has_category() ) {
 			_e( 'in', 'camp' );
-		}
-		the_category( ' ' ); ?>
+			the_category( ', ' );
+		} ?>
 	</p>
 	<?php the_post_thumbnail(); ?>
 </header>
@@ -56,7 +62,7 @@ if ( is_search() ) {
 }
 wp_link_pages(); ?>
 <footer class="camp-post-footer">
-	<?php if ( get_the_tags() ) : ?>
+	<?php if ( has_tag() ) : ?>
 		<p class="camp-tags"><?php the_tags( __( 'Tags: ', 'camp' ) ); ?></p>
 	<?php endif;
 	if ( is_single() && current_user_can( 'publish_pages' ) && has_post_thumbnail() ) : ?>

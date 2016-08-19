@@ -1,12 +1,15 @@
 === Camp ===
 Contributors: BestWebLayout, BestWebSoft
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
-Tags: blue, two-columns, right-sidebar,  fixed-layout, custom-menu, featured-images, sticky-post, translation-ready, slider, custom-header, custom-background
-Requires at least: 4.1
-Tested up to: 4.6-trunk
-Stable tag: 1.5
-License: GPLv3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Author URI: http://bestweblayout.com/
+Donate link: http://bestwebsoft.com/donate/
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, sticky-post, threaded-comments, translation-ready
+Requires at least: 4.2
+Tested up to: 4.6
+Stable tag: 1.6
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+Camp WordPress Theme, Copyright 2016 BestWebLayout.com
+Theme Camp is distributed under the terms of the GNU GPL
 
 == Description ==
 
@@ -86,11 +89,7 @@ From your Admin Panel, use the menu to select Plugins -> Add New. Search the nec
 
 = How to change language from English to Russian? =
 
-WordPress v4.0 and above:
 Change the language in the admin settings screen. Settings > General > Site Language.
-
-WordPress v3.9.2 and below:
-In the main catalog of your WordPress site, please find wp-config.php file, open it and change define( 'WPLANG', '' ); for define( 'WPLANG', 'ru_RU' ).
 
 = How can I create a custom menu? =
 
@@ -105,6 +104,9 @@ From your Admin Panel, use the menu to select Appearance -> Menus. At 'Manage Lo
 1. Theme home page.
 
 == Changelog ==
+
+= V1.6 - 19.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
 
 = V1.5 - 11.05.2016 =
 * Update: Screenshot was updated to size 1200x900.
@@ -135,6 +137,9 @@ From your Admin Panel, use the menu to select Appearance -> Menus. At 'Manage Lo
 * Release Camp theme.
 
 == Upgrade Notice ==
+
+= V1.6 =
+* The compatibility with new WordPress version updated.
 
 = V1.5 =
 Screenshot was updated to size 1200x900. screen-reader-text css class was added to style.css. Fixed mismatch coding standards. The theme has been tested for the compatibility with WordPress v.4.6-alpha.

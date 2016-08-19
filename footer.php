@@ -11,7 +11,7 @@
 				<?php wp_footer(); ?>
 				<div class = "camp-footer">
 					<div class = "camp-cpy">
-						<?php echo '&copy; ' . date( 'Y ' ) . get_bloginfo( 'name' ); ?>
+						<?php echo '&copy; ' . date_i18n( 'Y ' ) . get_bloginfo( 'name' ); ?>
 					</div>
 					<div class = "camp-author">
 						<?php printf( __( 'Powered by %s and %s', 'camp' ), '<a href = "' . esc_url( wp_get_theme()->get( 'AuthorURI' ) ) . '">BestWebLayout</a>', '<a href = "' . esc_url( 'http://wordpress.org/' ) . '">WordPress</a>' ); ?>
